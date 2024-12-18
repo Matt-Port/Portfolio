@@ -2,6 +2,11 @@ body {
 	background-color: lightgray;
 }
 
+.container, .container-fluid {
+     padding-right: 0px; 
+     padding-left: 0px; 
+}
+
 h1 {
 	background-color: black;
 	color: white;
