@@ -1,16 +1,20 @@
 body {
-	background-color: lightgray;
+	background-color: lightgrey;
 	margin: 0;
 }
 
+center {
+	background-size: cover;
+}
+
 h1 {
-	background-color: black;
+	
 	color: white;
 	margin-top: 0;
 }
 
 h2 {
-	background-color: black;
+	
 	color: white;
 }
 
