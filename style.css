@@ -8,13 +8,15 @@ center {
 }
 
 h1 {
-	
+	padding-top: 45vh;
+	margin-bottom: 0;
 	color: white;
 	margin-top: 0;
 }
 
 h2 {
-	
+	margin-top: 1vh;
+	padding-bottom: 45vh;
 	color: white;
 }
 
