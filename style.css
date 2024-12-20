@@ -1,23 +1,23 @@
 body {
-	background-color: lightgrey;
+	background-color:  #817590 ;
 	margin: 0;
 }
 
-center {
-	background-size: cover;
-}
-
 h1 {
-	padding-top: 45vh;
 	margin-top: 0;
 	margin-bottom: 0;
 	color: white;
+	font-family: 'Courier New', monospace;
+	font-weight: normal; 
+	font-size: 40px;
 }
 
 h2 {
 	margin-top: 1vh;
-	padding-bottom: 45vh;
 	color: white;
+	font-family: 'Courier New', monospace;
+	font-weight: normal; 
+	font-size: 22px;
 }
 
 p {
