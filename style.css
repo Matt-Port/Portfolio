@@ -1,6 +1,11 @@
 /*Page text formatting*/
+@font-face {
+  font-family: myFirstFont;
+  /*src: url(sansation_light.woff) format("woff"),
+		url(sansation_light.woff2 format("woff2"); */
+}
 body {
-	background-color:  #817590 ;
+	background-color: #817f8d ;
 	margin: 0;
 }
 h1 {
@@ -18,9 +23,22 @@ h2 {
 	font-weight: normal; 
 	font-size: 22px;
 }
+h3 {
+	margin: 1vw;
+	font-family: 'Courier New', monospace;
+	font-size: 18px;
+}
 p {
 	margin: 1vw;
 }
+.intro {
+	
+}
+.blur-box {
+    background-color: #020305;
+    box-shadow: 0 0 38px 40px #020305;
+}
+
 
 /*Scroll bar uniformity */
 ::-webkit-scrollbar {
