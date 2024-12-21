@@ -1,9 +1,15 @@
 /*Page text formatting*/
 @font-face {
-  font-family: myFirstFont;
-  /*src: url(sansation_light.woff) format("woff"),
-		url(sansation_light.woff2 format("woff2"); */
+  font-family: robotoThin;
+  src: url("fonts/roboto/Roboto-Light.ttf");/* format("ttf");*/
+  font-weight: normal;
 }
+@font-face {
+  font-family: robotoMedium;
+  src: url("fonts/roboto/Roboto-Medium.ttf");/* format("ttf");*/
+  font-weight: normal;
+}
+
 body {
 	background-color: #817f8d ;
 	margin: 0;
@@ -25,10 +31,11 @@ h2 {
 }
 h3 {
 	margin: 1vw;
-	font-family: 'Courier New', monospace;
+	font-family: 'robotoMedium';
 	font-size: 18px;
 }
 p {
+	font-family: 'robotoThin';
 	margin: 1vw;
 }
 .intro {
