@@ -35,6 +35,7 @@ h3 {
 	font-size: 18px;
 }
 p {
+	font-size: 22px;
 	font-family: 'ralewayLight', monospace;
 	margin: 1vw;
 }
@@ -95,11 +96,75 @@ p {
 /* }  */
 
 /*Parent Child side by side alignment*/
-.parent {
-  padding: 1rem;
+@media only screen and (orientation: landscape) {
+	.aboutMeHeight {
+		height: 40vh;
+	}
+	.aboutMeHeader {
+		font-size: 24px;
+		position: absolute;
+		right: 20px;
+		margin: 0;
+	}
+	.aboutMeBody {
+		font-size: 20px;
+		position: absolute;
+		top: 2px;
+		left: 0;
+		margin: 0;
+	}
+	.parent {
+		padding-top: 5px;
+		padding-bottom: 40px;
+		width: 100%;
+		/* background-color: rgba(255, 255, 255, 0.5); */
+		position: static;
+	}
+	.child-float-left {
+		/* background-color: rgba(130, 90, 90, 0.4); */
+		height: 3em;
+		float: left;
+		width: 29%;
+		position: relative;
+	}
+	.child-float-right {
+		/* background-color: rgba(90, 130, 90, 0.4); */
+		height: 3em;
+		float: left;
+		width: 42%;
+		position: relative;
+	}
 }
-.child-float {
-  border: 1px solid indigo;
-  padding: 10px;
-  float: left;
+@media only screen and (orientation: portrait) {
+	.aboutMeHeight {
+		height: 45vh;
+	}
+	.aboutMeHeader {
+		font-size: 24px;
+		position: relative;
+		left: 0;
+	}
+	.aboutMeBody {
+		font-size: 20px;
+		position: relative;
+		left: 0;
+	}
+	.parent {
+		padding-top: 0;
+		padding-bottom: 15px;
+		width: 100%;
+		/* background-color: rgba(255, 255, 255, 0.5); */
+		position: static;
+	}
+	.child-float-left {
+		/* background-color: rgba(130, 90, 90, 0.4); */
+		padding: 1vw;
+		padding-top: 0;
+		position: relative;
+	}
+	.child-float-right {
+		/* background-color: rgba(90, 130, 90, 0.4); */
+		padding: 1vw;
+		position: relative;
+	}
 }
