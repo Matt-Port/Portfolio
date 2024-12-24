@@ -69,8 +69,11 @@ li {
 	width: 100vw;
 	flex-direction: column;
 	min-height: 20vh;
+	margin-top: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	background-color: black;
-	box-shadow: 0 0 5px 1px #0f0f0f;
+	box-shadow: 0 -3px 10px 1px rgba(0,0,0,0.5);
 	position: static;
 }
 /* .blur-box { */
@@ -108,41 +111,39 @@ li {
 @media only screen and (orientation: landscape) {
 	.aboutMeHeader {
 		font-size: 24px;
-		position: absolute;
 		right: 20px;
 		margin: 0;
 	}
 	.aboutMeBody {
 		font-size: 20px;
-		position: absolute;
 		top: 2px;
 		left: 0;
 		margin: 0;
 	}
 	.flex-parent {
-	  display: flex;
-	  flex-direction: row;
-	  min-height: 50vh;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		min-height: 50vh;
+		align-items: flex-start;
+		justify-content: flex-start;
+		align-items: stretch;
 	}
 	.parent {
 		padding-top: 35px;
 		padding-bottom: 40px;
 		width: 100%;
 		/* background-color: rgba(255, 255, 255, 0.5); */
-		position: static;
-		justify-content: flex-start;
 	}
 	.child-float-left {
 		/* background-color: rgba(130, 90, 90, 0.4); */
-		height: 3em;
-		width: 29%;
-		position: relative;
+		flex-basis: 29%;
+		text-align: right;
+		padding-right: 20px;
 	}
 	.child-float-right {
 		/* background-color: rgba(90, 130, 90, 0.4); */
-		height: 3em;
-		width: 42%;
-		position: relative;
+		flex-basis: 48%;
 	}
 }
 @media only screen and (orientation: portrait) {
@@ -178,7 +179,10 @@ li {
 	}
 	.child-float-right {
 		/* background-color: rgba(90, 130, 90, 0.4); */
-		padding: 3vw;
+		padding-top: 3vw;
+		padding-bottom: 3vw;
+		padding-left: 8vw;
+		padding-right: 2vw;
 		position: relative;
 	}
 }
