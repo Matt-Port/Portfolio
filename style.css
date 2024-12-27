@@ -87,28 +87,45 @@ li {
 										rgba(129, 127, 141,0.25), 
 										rgba(129, 127, 141,0));		
 }
+.highlight-Link {
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    font-weight: 400;
+    text-decoration: none;
+    display: inline-block;
+	color: black;
+}
+.highlight-Link:hover {
+	box-shadow: inset 0 -3px 0 0 #000;
+}
 .introCTA {
 	font-size: 18px;
 	font-family: 'ralewayExtraLight' , monospace;
 	margin-left: 0;
 	
 }
-.highlight-link {
+.email-Link {
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
     font-weight: 400;
     text-decoration: none;
     display: inline-block;
     padding: 2px 3px;
-    /* -webkit-box-shadow: inset 0 -3px 0 #ac3232; */
-    box-shadow: inset 0 -3px 0 0 #aca7cb;
+    /* -webkit-box-shadow: inset 0 -3px 0 #aca7cb; */
+    box-shadow: inset 0 -3px 0 0 #4cd2e4;
 	color: black;
 }
-.highlight-link:hover {
-    /* -webkit-box-shadow: inset 0 -33px 0 0 #ac3232; */
-    box-shadow: inset 0 -33px 0 0 #aca7cb;
+.email-Link:hover {
+    /* -webkit-box-shadow: inset 0 -33px 0 0 #aca7cb; */
+    box-shadow: inset 0 -33px 0 0 #4cd2e4;
     color: #fff;
 }
+.project-nav {
+	background-color: #c6bac7;
+	width: 100%;
+	margin: 0;
+}
+
 
 /*Veritcal alignment testing line*/
 .vl {
@@ -118,6 +135,7 @@ li {
   left: 314px;
   top: 0;
 }
+
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -234,6 +252,7 @@ li {
 		margin-top: 10px;
 		padding-top: 1rem;
 		padding-bottom: 1rem;
+		margin-bottom: 0;
 		background-color: #23212d;
 		box-shadow: 0 -3px 10px 1px rgba(0,0,0,0.5);
 	}
@@ -312,7 +331,7 @@ li {
 		flex-direction: row;
 		flex-wrap: wrap;
 		min-height: 10vh;
-		margin-top: 5px;
+		margin-top: 0;
 		padding-top: 1rem;
 		padding-bottom: 15px;
 		background-color: #23212d;
