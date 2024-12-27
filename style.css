@@ -85,7 +85,7 @@ li {
 										rgba(129, 127, 141,0.82),
 										rgba(129, 127, 141,0.5),
 										rgba(129, 127, 141,0.25), 
-										rgba(129, 127, 141,0));		53515c
+										rgba(129, 127, 141,0));
 }
 .underline-Link {
     -webkit-transition: all .2s ease-in-out;
@@ -373,6 +373,7 @@ li {
 		padding-bottom: 15px;
 		background-color: #23212d;
 		/* box-shadow: 0 -3px 10px 1px rgba(0,0,0,0.5); */
+		position: relative;
 	}
 	.contactHead {
 		/* background-color: rgba(130, 90, 90, 0.4); */
@@ -386,11 +387,26 @@ li {
 		font-size: 22px;
 	}
 	.contactLinkIcon {
-		background-color: rgba(90, 130, 90, 0.4);
-		flex-basis: 18%; 
+		/* background-color: rgba(90, 130, 90, 0.4); */
+		flex-basis: 20%; 
 		color: white; 
 		padding-left: 0; 
 		list-style-type: none;
+	}
+	.topGradientContact {
+		position:absolute; 
+		height:2vh; 
+		width:100%;
+		top:0; 
+		padding-top:0;
+		margin-top:0; 
+		background-image: linear-gradient(to top, 
+											rgba(83, 81, 92,0),
+											rgba(83, 81, 92,0),
+											rgba(83, 81, 92,0.1),
+											rgba(83, 81, 92,0.2),
+											rgba(83, 81, 92,0.5),
+											rgba(83, 81, 92,1));		
 	}
 }
 /* CONTACT SECTION PORTRAIT LAYOUT */
@@ -407,6 +423,7 @@ li {
 		padding-bottom: 15px;
 		background-color: #23212d;
 		/* box-shadow: 0 -3px 10px 1px rgba(0,0,0,0.5); */
+		position: relative;
 	}
 	.contactHead {
 		/* background-color: rgba(130, 90, 90, 0.4); */
@@ -421,10 +438,38 @@ li {
 	}
 	.contactLinkIcon {
 		/* background-color: rgba(90, 130, 90, 0.4); */
-		flex-basis: 18%; 
+		flex-basis: 20%; 
 		color: white; 
 		padding-left: 4vw; 
 		list-style-type: none;
 		margin-bottom: 0;
 	}
+	.topGradientContact {
+		position:absolute; 
+		height:2vh; 
+		width:100%;
+		top:0; 
+		padding-top:0;
+		margin-top:0; 
+		background-image: linear-gradient(to top, 
+											rgba(83, 81, 92,0),
+											rgba(83, 81, 92,0),
+											rgba(83, 81, 92,0.1),
+											rgba(83, 81, 92,0.2),
+											rgba(83, 81, 92,0.5),
+											rgba(83, 81, 92,1));		
+	}
+}
+
+.contactLink {
+	-webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+	font-weight: 400;
+    text-decoration: none;
+	color: white;
+	font-size:16px;
+	padding-bottom: 1px;
+}
+.contactLink:hover {
+	box-shadow: inset 0 -3px 0 0 #fff;
 }
