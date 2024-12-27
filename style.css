@@ -401,7 +401,7 @@ li {
 		flex-direction: column;
 		flex-wrap: wrap;
 		min-height: 10vh;
-		margin-top: 5px;
+		margin-top: 0;
 		padding-top: 1rem;
 		padding-bottom: 15px;
 		background-color: #23212d;
@@ -410,7 +410,7 @@ li {
 	.contactHead {
 		/* background-color: rgba(130, 90, 90, 0.4); */
 		flex-basis: 25%;
-		text-align: right;
+		text-align: center;
 		color: white; 
 		margin-left: 0; 
 		margin-right: 0; 
