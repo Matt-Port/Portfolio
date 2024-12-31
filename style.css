@@ -362,28 +362,56 @@ li {
 	padding-top: 10vh;
 	padding-bottom: 10vh;
 }
-.project-link {
-	width: 100%;
-	display: flex;
-	flex: 0 1 auto;
-	flex-direction: row;
-	flex-wrap: wrap;
-	min-height: 10vh;
-	/* background-color: rgba(90,90,130,0.4); */
+/* PROJECT ITEMS LANDSCAPE LAYOUT */
+@media only screen and (min-width: 800px) {
+	.project-link {
+		width: 100%;
+		display: flex;
+		flex: 0 1 auto;
+		flex-direction: row;
+		flex-wrap: wrap;
+		min-height: 10vh;
+		/* background-color: rgba(90,90,130,0.4); */
+	}
+	.project-left {
+		/* background-color: rgba(90,130,90,0.4); */
+		flex-basis: 48%;
+		color: white;
+		padding-left: calc(6vw - 10px);
+		text-align: right;
+	}
+	.project-right {
+		/* background-color: rgba(130, 90, 90, 0.4); */
+		flex-basis: 35%; 
+		color: white; 
+		padding-left: 2vw;
+		padding-top: 1vh;
+	}
 }
-.project-left {
-	/* background-color: rgba(90,130,90,0.4); */
-	flex-basis: 48%;
-	color: white;
-	padding-left: calc(6vw - 10px);
-	text-align: right;
-}
-.project-right {
-	/* background-color: rgba(130, 90, 90, 0.4); */
-	flex-basis: 35%; 
-	color: white; 
-	padding-left: 2vw;
-	padding-top: 1vh;
+/* PROJECT ITEMS PORTRAIT LAYOUT */
+@media only screen and (max-width: 800px) {
+	.project-link {
+		width: 100%;
+		display: flex;
+		flex: 0 1 auto;
+		flex-direction: column;
+		flex-wrap: wrap;
+		min-height: 40vh;
+		justify-content: center;
+		/* background-color: rgba(90,90,130,0.4); */
+	}
+	.project-left {
+		/* background-color: rgba(90,130,90,0.4); */
+		flex-basis: 100%;
+		text-align: center;
+	}
+	.project-right {
+		/* background-color: rgba(130, 90, 90, 0.4); */
+		flex-basis: 40%; 
+		color: white; 
+		padding-left: 2vw;
+		padding-top: 1vh;
+	}
 }
 
 .game-project-title {
