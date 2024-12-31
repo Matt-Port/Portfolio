@@ -120,11 +120,6 @@ li {
     box-shadow: inset 0 -33px 0 0 #4cd2e4;
     color: #fff;
 }
-.project-nav {
-	background-color: #c6bac7;
-	width: 100%;
-	margin: 0;
-}
 
 
 /*Veritcal alignment testing line*/
@@ -359,6 +354,61 @@ li {
 	}
 }
 
+/* PROJECT NAV SECTION LAYOUT */
+.project-area {
+	background-color: #c1b5c2;
+	width: 100%;
+	margin: 0;
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+}
+.project-link {
+	width: 100%;
+	display: flex;
+	flex: 0 1 auto;
+	flex-direction: row;
+	flex-wrap: wrap;
+	min-height: 10vh;
+	/* background-color: rgba(90,90,130,0.4); */
+}
+.project-left {
+	/* background-color: rgba(90,130,90,0.4); */
+	flex-basis: 48%;
+	color: white;
+	padding-left: calc(6vw - 10px);
+	text-align: right;
+}
+.project-right {
+	/* background-color: rgba(130, 90, 90, 0.4); */
+	flex-basis: 35%; 
+	color: white; 
+	padding-left: 2vw;
+	padding-top: 1vh;
+}
+
+.game-project-title {
+	-webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+	font-family: 'ralewayRegular', monospace;
+	font-weight: 550;
+    text-decoration: none;
+	color: black;
+	font-size: 23px;
+	
+}
+.game-project-title:hover {
+	box-shadow: inset 0 -2px 0 0 #000;
+}
+.game-project-description {
+	color: black;
+	padding: 0;
+	padding-top: 15px;
+	margin: 0;
+	margin-right: 15px;
+	font-size: 19px;
+}
+
+
 /* CONTACT SECTION LANDSCAPE LAYOUT */
 @media only screen and (min-width: 750px) {
 	.contactBox {
@@ -377,13 +427,13 @@ li {
 	}
 	.contactHead {
 		/* background-color: rgba(130, 90, 90, 0.4); */
-		flex-basis: 25%;
+		flex-basis: 26%;
 		text-align: right;
 		color: white; 
 		margin-left: 0; 
 		margin-right: 0; 
 		padding-left: 0;
-		padding-right: 4vw;
+		padding-right: calc(3vw - 10px);
 		font-size: 22px;
 	}
 	.contactLinkIcon {
