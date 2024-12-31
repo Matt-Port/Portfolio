@@ -409,8 +409,9 @@ li {
 		/* background-color: rgba(130, 90, 90, 0.4); */
 		flex-basis: 40%; 
 		color: white; 
-		padding-left: 2vw;
-		padding-top: 1vh;
+		padding-left: 7vw;
+		padding-right: 5vw;
+		padding-top: 3vh;
 	}
 }
 
