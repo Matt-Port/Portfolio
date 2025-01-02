@@ -67,7 +67,6 @@ li {
 
 .headerImage {
 	z-index:-1;
-	height:110vh; 
 	margin-bottom:6vh; 
 	position:static; 
 	background-size: cover; 
@@ -581,4 +580,19 @@ li {
 }
 .inspirationLink:hover {
 	box-shadow: inset 0 -1px 0 0 #fff;
+}
+
+
+.nav-box {
+	display: flex;
+	width: 100%;
+	flex: 0 1 auto;
+	flex-direction: row;
+	flex-wrap: wrap;
+	position: relative;
+	text-align: center;
+}
+.nav-item {
+	flex-basis: 15%;
+	
 }
