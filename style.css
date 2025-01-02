@@ -593,6 +593,10 @@ li {
 	text-align: center;
 }
 .nav-item {
-	flex-basis: 15%;
-	
+	flex-basis: 6%;
+	padding-top:1vh; 
+	padding-bottom:1vh; 
+	border: 2px solid #312f3d; 
+	background-color: rgba(10,0,10,0.1);
+	border-radius: 20px;
 }
