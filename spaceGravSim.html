@@ -8,9 +8,10 @@
 	</head>
 	<body>
 		<header style="background-color:black;">
-		<!-- Head and intro the page before devlogging -->
 			<div class="headerImage" style="height:40vh;">
-				<div style="top:14vh; left:18vw; position:absolute;">
+				<div style="top:14vh; left:15vw; position:absolute;">
+					<!-- Make this text align much nicer on mobile. 
+						 Follows old format which has lead to small right-hand margin -->
 					<h1>Space Simulation</h1>
 				</div>
 				<div class="toPageGradiant" style="top:30vh;"></div>
@@ -19,38 +20,65 @@
 		<!-- make nav section look cleaner (less 2000 and nuthin) and make it behave on mobile -->
 		<nav>
 			<div class="nav-box">
-				<a href="https://matt-port.github.io/Portfolio/" target="_self" style="margin-left: 6vw; color:black; text-decoration: none;">
-					<div class="nav-item">
-						<center>
-							<p style="font-face: ralewayBold; font-size: 22px;">
-							Home </p>
-						</center>
-					</div>
+				<a href="https://matt-port.github.io/Portfolio/" target="_self" class="underline-Link" style="margin:0; margin-left:20px; padding:0; color:rgba(20,10,20,0.9); text-decoration: none;">
+					<p style="font-face: ralewayBold; font-size: 22px; margin:0; padding:0;">
+					Back to Home </p>
 				</a>
 			</div>
 		</nav>
 		
 		<section>
-			<div>
-				<p style="margin-top:0;"><br>Pictured below is my first ever attempted project in Godot, the UFO player model was also my first ever Blender model, and pictured is a basic test scene for 
-				flight and simulating 0-gravity, as well as smoothing motion and other movement tweaks. <br> 
-				</p>
-				<center style="margin-top:30px; margin-bottom:30px;">
-					<img src="images/Godot_ss1_progress.png" alt="SS1" width="97%" title="A picture of the first scene in Godot">
-				</center>	
-				<!-- Improve wording on 2nd update -->
-				<p>
-					<br>
-					Below, you can see the movement system being improved and the introduction of planets with a primitive form of gravity
-				</p> 
-				<center style="margin-top:30px;">
-					<video controls="controls" width="94%" alt="SS1" title="A video of the ufo flying and interacting with gravity">
+			<div class="devlog-section">
+				<!-- Have an introductory paragraph explaining the initial concept before any creation. Give a vague idea! -->
+				<!-- Make this sound more professional and do l/r and r/l columns for text and image pairs to create a flow to the page -->
+				<div class="img-text-pair">
+					<p class="text-left"><br>Pictured below is my first ever attempted project in Godot, the UFO player model was also my first ever Blender model, and pictured is a basic test scene for 
+					flight and simulating 0-gravity, as well as smoothing motion and other movement tweaks. <br> 
+					</p>
+					<img src="images/Godot_ss1_progress.png" alt="SS1" width="97%" title="A picture of the first scene in Godot" class="img-right">	
+				</div>
+			</div>
+			<div class="devlog-section">
+				<!-- Improve wording on 2nd too -->
+				<div class="img-text-pair"> 
+					<!-- Make video a cleaner format -->
+					<video controls="controls" width="94%" alt="SS1" title="A video of the ufo flying and interacting with gravity" class="img-left">
 					  <source src="videos/clip1vid1_Space_grav_sim.mp4" type="video/mp4">
 					  Your browser does not support HTML video.
 					</video>
-				</center>
-				<!-- 3rd update hopefully can be character seperate to ship/improved ship collision -->
+					<p class="text-right">
+						Below, you can see the movement system being improved and the introduction of planets with a primitive form of gravity
+					</p>
+				</div>
+				<!-- (unlikely before submission) 3rd update hopefully can be character seperate to ship/improved ship collision -->
 			</div>
 		</section>
+		<footer>
+			<div class="flexSkillsBox">
+				<h3 class="contactHead">CONTACTS<br></h3>
+				<ul class="contactLinkIcon">
+					<li style="font-face: ralewayBold; font-size: 20px; margin-bottom:15px;"><br><strong>GITHUB</strong>
+					<li>&nbsp; <a href="https://github.com/Matt-Port" target="_blank" class="contactLink"> Matt-Port </a>
+				</ul>
+				<ul class="contactLinkIcon">
+					<li style="font-face: ralewayBold; font-size: 20px; margin-bottom:15px;"><br><strong>LINKEDIN</strong>
+					<li>&nbsp; <a href="https://www.linkedin.com/in/matthew-griffin-8abb7a283" target="_blank" class="contactLink"> Matthew Griffin </a>
+				</ul>
+				<ul class="contactLinkIcon" style="flex-basis: 31%;">
+					<li style="font-face: ralewayBold; font-size: 20px; margin-bottom:15px;"><br><strong>EMAIL</strong>
+					<li>&nbsp; <a href="mailto:matthewgriffin265@yahoo.com" target="_blank" class="contactLink">matthewgriffin265@yahoo.com</a>
+				</ul>
+				
+				<div class="inspirationBox">
+					<p style="font-size:13px">
+					Developed by Matthew Griffin - 2024 <br>
+					Inspired by 
+					<a href="https://brittanychiang.com/" target="_blank" class="inspirationLink">Brittany Chiang</a> 
+					and 
+					<a href="https://joebrogers.com/" target="_blank" class="inspirationLink">Joeb Rogers</a>
+					</p>
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>
