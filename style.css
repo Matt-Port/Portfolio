@@ -455,13 +455,13 @@ li {
 	}
 	.contactHead {
 		/* background-color: rgba(130, 90, 90, 0.4); */
-		flex-basis: 26%;
+		flex-basis: 23%;
 		text-align: right;
 		color: white; 
 		margin-left: 0; 
 		margin-right: 0; 
 		padding-left: 0;
-		padding-right: calc(3vw - 10px);
+		padding-right: calc(6vw - 10px);
 		font-size: 22px;
 	}
 	.contactLinkIcon {
@@ -611,8 +611,18 @@ li {
 	padding-bottom: 10vh;
 }
 /* PROJECT ITEMS LANDSCAPE LAYOUT */
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1000px) {
 	.img-text-pair {
+		width: 100%;
+		display: flex;
+		flex: 0 1 auto;
+		flex-direction: row;
+		flex-wrap: wrap;
+		min-height: 10vh;
+		justify-content: right;
+		/* background-color: rgba(90,90,130,0.4); */
+	}
+	.img-text-pair-reverse {
 		width: 100%;
 		display: flex;
 		flex: 0 1 auto;
@@ -622,41 +632,56 @@ li {
 		/* background-color: rgba(90,90,130,0.4); */
 	}
 	.img-left {
-		background-color: rgba(90,130,90,0.4);
-		flex-basis: 48%;
-		color: white;
-		padding-left: calc(6vw - 10px);
+		/* background-color: rgba(90,130,90,0.4); */
+		flex-basis: 38%;
+		color: black;
+		padding-left: calc(11vw - 10px);
 		text-align: right;
 	}
 	.text-right {
-		background-color: rgba(130, 90, 90, 0.4);
-		flex-basis: 35%; 
-		color: white; 
+		/* background-color: rgba(130, 90, 90, 0.4); */
+		flex-basis: 40%; 
+		color: black; 
 		padding-left: 2vw;
 		padding-top: 1vh;
 	}
 	.text-left {
-		background-color: rgba(130, 90, 90, 0.4);
-		flex-basis: 35%; 
-		padding-left: calc(6vw-10px);
-		color: white; 
+		/* background-color: rgba(130, 90, 90, 0.4); */
+		flex-basis: 40%; 
+		padding-left: calc(6vw - 10px);
+		color: black; 
 		padding-top: 1vh;
 	}
+	.text-left > p {
+		margin-left: 2vw;
+	}
 	.img-right {
-		background-color: rgba(90,130,90,0.4);
-		flex-basis: 30%;
-		color: white;
+		/* background-color: rgba(90,130,90,0.4); */
+		flex-basis: 38%;
+		color: black;
 		padding-left: 2vw;
 		text-align: left;
+		padding-right: calc(11vw + 10px);
 	}
 }
+
 /* PROJECT ITEMS PORTRAIT LAYOUT */
-@media only screen and (max-width: 800px) {
-	.img-text-section {
+@media only screen and (max-width: 1000px) {
+	.img-text-pair {
+		width: 100%;
+		display: flex;
+		/* flex: 0 1 auto; */
+		flex-direction: column;
+		flex-wrap: wrap;
+		min-height: 40vh;
+		justify-content: center;
+		/* background-color: rgba(90,90,130,0.4); */
+	}
+	.img-text-pair-reverse {
 		width: 100%;
 		display: flex;
 		flex: 0 1 auto;
-		flex-direction: column;
+		flex-direction: column-reverse;
 		flex-wrap: wrap;
 		min-height: 40vh;
 		justify-content: center;
@@ -664,28 +689,28 @@ li {
 	}
 	.img-left {
 		/* background-color: rgba(90,130,90,0.4); */
-		flex-basis: 100%;
+		flex-basis: 20%;
 		text-align: center;
+		color: black;
 	}
 	.text-right {
 		/* background-color: rgba(130, 90, 90, 0.4); */
-		flex-basis: 40%; 
-		color: white; 
-		padding-left: 7vw;
-		padding-right: 5vw;
-		padding-top: 3vh;
+		flex-basis: 100%; 
+		text-align: left;
+		color: black; 
+		margin: 3vw;
 	}
 	.text-left {
 		/* background-color: rgba(90,130,90,0.4); */
 		flex-basis: 100%;
-		text-align: center;
+		text-align: left;
+		color: black;
+		margin: 3vw;
 	}
 	.img-right {
 		/* background-color: rgba(130, 90, 90, 0.4); */
-		flex-basis: 40%; 
-		color: white; 
-		padding-left: 7vw;
-		padding-right: 5vw;
-		padding-top: 3vh;
+		flex-basis: 20%; 
+		text-align: center;
+		color: black; 
 	}
 }
