@@ -603,7 +603,14 @@ li {
 }
 
 /* PROJECT PAGE NEWSPAPER COLUMN LAYOUT CLASSES */
-
+.project-page-intro {
+	/* background-color: rgba(90,90,130,0.4); */
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-top: 1vh;
+	margin-bottom: 8vh;
+}
 /* PROJECT ITEMS LANDSCAPE LAYOUT */
 @media only screen and (min-width: 1000px) {
 	.devlog-section {
