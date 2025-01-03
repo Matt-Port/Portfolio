@@ -28,7 +28,7 @@
 		</nav>
 		
 		<section>
-			<div class="devlog-section" style="padding-bottom: 15vh;">
+			<div class="devlog-section">
 				<!-- Have an introductory paragraph explaining the initial concept before any creation. Give a vague idea! -->
 				<!-- Make this sound more professional and do l/r and r/l columns for text and image pairs to create a flow to the page -->
 				<div class="img-text-pair">
@@ -43,7 +43,7 @@
 						</p>
 					</div>
 					<div class="img-right" style="margin:0;">
-						<img src="images/Godot_ss1_progress.png" alt="SS1" width="100%" title="A picture of the first scene in Godot">
+						<img src="images/Godot_ss1_progress.png" alt="SS1" title="A picture of the first scene in Godot" class="img-resize">
 					</div>
 				</div>
 			</div>
@@ -52,14 +52,24 @@
 				<div class="img-text-pair-reverse"> 
 					<!-- Make video a cleaner format -->
 					<div class="img-left">
-						<video controls="controls" width="99%" alt="SS1" title="A video of the ufo flying and interacting with gravity">
+						<video controls="controls" alt="SS1" title="A video of the ufo flying and interacting with gravity" class="img-resize">
 							<source src="videos/clip1vid1_Space_grav_sim.mp4" type="video/mp4">
 							Your browser does not support HTML video.
 						</video>
 					</div>
 					<div class="text-right">
 						<p>
-							Below, you can see the movement system being improved and the introduction of planets with a primitive form of gravity
+							&emsp; After creating the basic scene, I made some alterations to the skybox and other aesthetic changes. Then, in the weeks following 
+							that, I kept tweaking the movement system and allowed the player to roll the ship along all 3 axes, giving for more fine control - which I
+							<i>love</i>  about 0-gravity movement systems. 
+							<br>
+							&emsp; With the floating space-like movements now implemented in a basic form, I moved
+							on to adding gravitational pulls to planets. By creating a 3D area around the spherical planets to detect entry of objects 
+							on the player layer, each planet can send a value for gravity to accelerate the ship to the movement controls, once in its range 
+							- however this system needs more fine tuning at this stage and should act in a more realistic and expected way.
+							<br> <br>
+							&emsp; Next I hope to add a true player character that can get out of the ship and walk around -  then I can add structures to
+							the planets that can be walked through and explored.
 						</p>
 					</div>
 				</div>

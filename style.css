@@ -596,22 +596,23 @@ li {
 .nav-item {
 	flex-basis: 6%;
 	padding-top:1vh; 
-	padding-bottom:1vh; 
+	padding-bottom:3vh; 
 	border: 2px solid #312f3d; 
 	background-color: rgba(10,0,10,0.1);
 	border-radius: 20px;
 }
 
 /* PROJECT PAGE NEWSPAPER COLUMN LAYOUT CLASSES */
-.devlog-section {
-	/* background-color: #c1b5c2; */
-	width: 100%;
-	margin: 0;
-	padding-top: 10vh;
-	padding-bottom: 10vh;
-}
+
 /* PROJECT ITEMS LANDSCAPE LAYOUT */
 @media only screen and (min-width: 1000px) {
+	.devlog-section {
+		/* background-color: #c1b5c2; */
+		width: 100%;
+		margin: 0;
+		padding-top: 10vh;
+		padding-bottom: 15vh;
+	}
 	.img-text-pair {
 		width: 100%;
 		display: flex;
@@ -663,10 +664,20 @@ li {
 		text-align: left;
 		padding-right: calc(11vw + 10px);
 	}
+	.img-resize {
+		width: 100%;
+	}
 }
 
 /* PROJECT ITEMS PORTRAIT LAYOUT */
 @media only screen and (max-width: 1000px) {
+	.devlog-section {
+		/* background-color: #c1b5c2; */
+		width: 100%;
+		margin: 0;
+		padding-top: 10vh;
+		padding-bottom: 10vh;
+	}
 	.img-text-pair {
 		width: 100%;
 		display: flex;
@@ -712,5 +723,8 @@ li {
 		flex-basis: 20%; 
 		text-align: center;
 		color: black; 
+	}
+	.img-resize {
+		width: 85%;
 	}
 }
